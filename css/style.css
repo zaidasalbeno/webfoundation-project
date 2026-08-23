@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+  
+}
+
+form {
+    font-size: larger;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    border-radius: 2px solid black;
+}
+form button{
+margin-top: 20px ;
+background-color: green;
+color: aliceblue;
+border-radius: 20px;
+}
