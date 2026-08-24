@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list job</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <h1 class="headedti navbar-brand text-light">
+                welcom to ZZ work connect
+            </h1>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="glo nav-link text-light" href="../html/home.html">
+                            home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="glo nav-link text-light" href="../html/about.html">
+                            about
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="glo nav-link text-light" href="../html/days.html">
+                            week days work
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="post-job">
+
+        <div class="container">
+
+            <div class="job-form">
+
+                <h1 class="job-form-title">
+                    list a job
+                </h1>
+
+                <p class="job-form-description">
+                    enter the information about the job you want to post.
+                </p>
+
+
+                <form>
+
+
+                    <div class="mb-3">
+
+                        <label for="job-title" class="form-label">
+                            job title
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="job-title"
+                            placeholder="example: web developer"
+                            required>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="job-description" class="form-label">
+                            job description
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            id="job-description"
+                            rows="5"
+                            placeholder="describe the job and what the worker will do"
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+
+                                <label for="pay" class="form-label">
+                                    pay
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="pay"
+                                    placeholder="example: $500 - $800"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+
+                                <label for="location" class="form-label">
+                                    location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="location"
+                                    placeholder="example: amman"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+
+                                <label for="work-type" class="form-label">
+                                    work type
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="work-type"
+                                    required>
+
+                                    <option value="">
+                                        choose work type
+                                    </option>
+
+                                    <option value="remote">
+                                        remote
+                                    </option>
+
+                                    <option value="office">
+                                        office
+                                    </option>
+
+                                    <option value="hybrid">
+                                        hybrid
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+
+                                <label for="job-time" class="form-label">
+                                    job time
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="job-time"
+                                    required>
+
+                                    <option value="">
+                                        choose job time
+                                    </option>
+
+                                    <option value="full-time">
+                                        full time
+                                    </option>
+
+                                    <option value="part-time">
+                                        part time
+                                    </option>
+
+                                    <option value="temporary">
+                                        temporary
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="skills" class="form-label">
+                            required skills
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="skills"
+                            placeholder="example: html, css, javascript">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="deadline" class="form-label">
+                            application deadline
+                        </label>
+
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="deadline">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="email" class="form-label">
+                            contact email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="example@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="job-submit-area">
+
+                        <button type="submit" class="job-submit">
+                            post job
+                        </button>
+
+                        <a href="../html/home.html" class="job-back">
+                            go back
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 ZZ work connect</p>
+
+    <p>find your next job with us</p>
+
+</footer>
+
+</body>
+</html>
