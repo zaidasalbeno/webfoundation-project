@@ -21,15 +21,28 @@ header {
     box-shadow: 0 0 10px aqua, 0 0 20px aqua;
 }
 
+.create-page {
+    background-color: rgb(70, 34, 70);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-page main {
+    flex-grow: 1;
+}
+
 .create {
-    width: 400px;
-    margin-top: 80px;
+    margin: 80px auto;
     padding: 30px;
     background-color: white;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
     box-shadow: 0 0 15px aqua;
+}
+
+.create-title {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .create label {
@@ -45,6 +58,7 @@ header {
 
 .create input:focus {
     outline: none;
+    border-color: aqua;
     box-shadow: 0 0 10px aqua;
 }
 
@@ -66,9 +80,15 @@ header {
     transform: scale(1.05);
 }
 
-.create .text-light {
+.back-link {
     margin-top: 15px;
+    color: black;
     text-align: center;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: aqua;
 }
 
 .hero {
@@ -467,11 +487,6 @@ footer {
 
 @media (max-width: 600px) {
 
-    .create {
-        width: 90%;
-        margin-top: 50px;
-    }
-
     .hero {
         height: 400px;
     }
@@ -505,6 +520,15 @@ footer {
     }
 
     .job-form-title {
+        font-size: 30px;
+    }
+
+    .create {
+        margin-top: 50px;
+        padding: 25px;
+    }
+
+    .create-title {
         font-size: 30px;
     }
 
